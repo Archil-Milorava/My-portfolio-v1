@@ -3,10 +3,10 @@ import Presentation from "../ui/Presentation"
 
 function Header() {
     return (
-        <div className=" h-36 w-full">
+        <section >
            <Navbar />
            <Presentation />
-        </div>
+        </section>
     )
 }
 

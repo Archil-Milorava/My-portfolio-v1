@@ -1,0 +1,18 @@
+import ProjectCard from "../ui/ProjectCard";
+
+function ProjectsSection() {
+  return (
+    <section className=" h-[550px] w-full border-none p-9 rounded-2xl shadow-lg flex flex-col bg-white">
+        <h1 className="text-5xl font-semibold uppercase tracking-wider text-green-main border-b border-b-black border-opacity-20 pb-2 ">Projects</h1>
+
+        <div className="flex justify-around  h-full w-full items-center gap-2">
+          <ProjectCard />
+
+        </div>
+      
+      
+    </section>
+  );
+}
+
+export default ProjectsSection;

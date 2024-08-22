@@ -1,11 +1,16 @@
-import Header from "./sections/Header"
+import Header from "./sections/Header";
+import ProjectsSection from "./sections/ProjectsSection";
+import SectionWrapper from "./ui/SectionWrapper";
 
 function App() {
   return (
-    <div className=" h-auto w-full ">
+    <main className="h-auto w-full flex flex-col gap-14 bg-white-main">
       <Header />
-    </div>
-  )
+      <SectionWrapper>
+        <ProjectsSection />
+      </SectionWrapper>
+    </main>
+  );
 }
 
-export default App
+export default App;

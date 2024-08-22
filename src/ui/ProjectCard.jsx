@@ -1,74 +1,60 @@
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
-function ProjectCard() {
+function ProjectCard({ data }) {
   const [isHovered, setIsHovered] = useState(false);
+  const {
+    title,
+    description,
+    image,
+    link,
+    githubLink,
+    fullStack,
+    technologies,
+  } = data;
+
 
   return (
-      <>
     <div
-      className="flex flex-col hover:w-[36rem]  h-80 w-64 transition-all duration-500 rounded-md cursor-pointer shadow-xl overflow-hidden"
+      className="h-80 w-72 border border-none shadow-2xl hover:w-[55rem] cursor-pointer rounded-md transition-all duration-1000 ease-in-out"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className=" w-full h-2/3">
-        <img
-          src="../../public/wild-2.png"
-          className="h-full object-cover "
-          alt="prj"
-        />
-      </div>
-      <div className=" w-full h-1/3 flex flex-col items-center space-y-2 p-2">
-        <h2 className="uppercase font-semibold tracking-wide text-red-main">
-          The Wild Oasis / FullStack
-        </h2>
-        <p className="text-center text-xs">
-          In This project user can manage hotel
-        </p>
-        {isHovered && (
-          <div className="flex gap-3 items-center">
-            <a href="">
-              <FaGithub className="text-xl text-red-main hover:text-opacity-60 transition-all" />
-            </a>
-            <p className="text-xs">
-              Built with: React-Query, React-Router, Supabase, Styled Components
+      {isHovered ? (
+        <div className=" h-full w-full flex gap-2 overflow-hidden bg-white-main">
+          <img src={image} className="h-full w-2/4  object-cover" alt={title} />
+
+          <div className=" pl-2 h-full w-2/4 max-h-full overflow-hidden flex flex-col items-start justify-between py-4">
+            <h1 className="text-2xl font-semibold tracking-wide text-red-main uppercase">
+              {title}
+            </h1>
+            <p className="text-sm text-black-main ">{description}</p>
+            <small>
+              Built with |{" "}
+              <span className="text-red-main">{technologies.join(", ")}</span>
+            </small>
+
+            <button className="w-3/4 h-10 ml-8  border-2 border-green-main flex items-center  text-3xl text-green-main justify-center hover:bg-green-main hover:text-white-main transition-all duration-500 ">
+              <a href={githubLink} target="blank">
+                <FaGithub />
+              </a>
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="h-full w-full flex flex-col overflow-hidden">
+          <img src={image} className="h-3/4 object-cover" alt={image} />
+          <div className=" h-1/4 flex flex-col items-start justify-around p-2">
+            <h1 className="text-2xl font-semibold tracking-wide text-red-main uppercase">
+              {title}
+            </h1>
+            <p className="text-sm text-green-main uppercase tracking-widest">
+              Hover for more...
             </p>
           </div>
-        )}
-      </div>
-    </div>
-    <div
-    className="flex flex-col hover:w-[36rem]  h-80 w-64 transition-all duration-500 rounded-md cursor-pointer shadow-xl overflow-hidden"
-    onMouseEnter={() => setIsHovered(true)}
-    onMouseLeave={() => setIsHovered(false)}
-  >
-    <div className=" w-full h-2/3">
-      <img
-        src="../../public/wild-2.png"
-        className="h-full object-cover "
-        alt="prj"
-      />
-    </div>
-    <div className=" w-full h-1/3 flex flex-col items-center space-y-2 p-2">
-      <h2 className="uppercase font-semibold tracking-wide text-red-main">
-        The Wild Oasis / FullStack
-      </h2>
-      <p className="text-center text-xs">
-        In This project user can manage hotel
-      </p>
-      {isHovered && (
-        <div className="flex gap-3 items-center">
-          <a href="">
-            <FaGithub className="text-xl text-red-main hover:text-opacity-60 transition-all" />
-          </a>
-          <p className="text-xs">
-            Built with: React-Query, React-Router, Supabase, Styled Components
-          </p>
         </div>
       )}
     </div>
-  </div>
-  </>
   );
 }
 

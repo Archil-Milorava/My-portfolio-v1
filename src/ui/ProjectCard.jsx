@@ -1,5 +1,10 @@
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import Button from "./Button";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 function ProjectCard({ data }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,10 +18,9 @@ function ProjectCard({ data }) {
     technologies,
   } = data;
 
-
   return (
     <div
-      className="h-80 w-72 border border-none shadow-2xl hover:w-[55rem] cursor-pointer rounded-md transition-all duration-1000 ease-in-out"
+      className="h-80 w-72 border border-none shadow-md hover:w-[55rem] cursor-pointer rounded-md transition-all duration-1000 ease-in-out"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -34,11 +38,17 @@ function ProjectCard({ data }) {
               <span className="text-red-main">{technologies.join(", ")}</span>
             </small>
 
-            <button className="w-3/4 h-10 ml-8  border-2 border-green-main flex items-center  text-3xl text-green-main justify-center hover:bg-green-main hover:text-white-main transition-all duration-500 ">
-              <a href={githubLink} target="blank">
-                <FaGithub />
-              </a>
-            </button>
+            <div className="flex gap-4 w-full h-auto justify-around items-center pr-2 ">
+              <button onClick={() => window.open(githubLink)} className=" w-32 h-10  border-2 border-green-main flex items-center justify-center text-md text-green-main tracking-wide font-semibold cursor-pointer hover:opacity-70 transition-all">
+                <FaGithub className="text-2xl" />
+              </button>
+              <button
+                onClick={() => window.open(link)}
+                className=" w-32 h-10  border-2 border-green-main flex items-center justify-center text-md text-green-main tracking-wide font-semibold cursor-pointer hover:opacity-70 transition-all"
+              >
+                Preview    <FaExternalLinkAlt />
+              </button>
+            </div>
           </div>
         </div>
       ) : (

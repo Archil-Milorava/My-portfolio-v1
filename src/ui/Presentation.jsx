@@ -3,7 +3,7 @@ import Button from "./Button";
 function Presentation() {
   return (
     <div className="h-screen w-full bg-black-main">
-      <div className="text-green-main  w- h-full space-y-8 pt-36 pl-48">
+      <div className="text-white  w- h-full space-y-8 pt-36 pl-48">
         <h1 className="text-8xl font-extrabold uppercase tracking-wider">
           Archil <br /> milorava.
         </h1>

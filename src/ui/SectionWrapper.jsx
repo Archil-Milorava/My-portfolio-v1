@@ -1,8 +1,28 @@
+import { motion } from "framer-motion";
+
 function SectionWrapper({children}) {
     return (
-        <section className="h-auto px-28 ">
+        <motion.section
+        
+        className="h-auto px-28"
+        
+        initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: 150 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+                ease: "easeInOut",
+              },
+            }
+          }}
+        >
             {children}
-        </section>
+        </motion.section>
     )
 }
 

@@ -20,7 +20,7 @@ function ProjectCard({ data }) {
 
   return (
     <div
-      className="h-80 w-72 border border-none shadow-md hover:w-[55rem] cursor-pointer rounded-md transition-all duration-1000 ease-in-out"
+      className="h-80 w-72 border border-none shadow-md hover:w-[55rem] cursor-pointer rounded-md transition-all duration-700 ease-in-out"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -55,12 +55,12 @@ function ProjectCard({ data }) {
         <div className="h-full w-full flex flex-col overflow-hidden">
           <img src={image} className="h-3/4 object-cover" alt={image} />
           <div className=" h-1/4 flex flex-col items-start justify-around p-2">
-            <h1 className="text-2xl font-semibold tracking-wide text-red-main uppercase">
+            <h1 className="text-center w-full text-xl font-semibold tracking-wide text-red-main uppercase">
               {title}
             </h1>
-            <p className="text-sm text-green-main uppercase tracking-widest">
+            {/* <p className="text-sm text-green-main uppercase tracking-widest">
               Hover for more...
-            </p>
+            </p> */}
           </div>
         </div>
       )}

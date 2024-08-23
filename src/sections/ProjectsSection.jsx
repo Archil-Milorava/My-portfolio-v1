@@ -1,23 +1,8 @@
-import { useEffect, useState } from "react";
 import projects from "../sevices/projectsData";
 import ProjectCard from "../ui/ProjectCard";
 
 function ProjectsSection() {
-  const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <section className={`h-[550px] w-full border-none p-9 rounded-2xl shadow-lg flex flex-col bg-[#fdfdfd]  transition-all duration-[1500ms] ease-in-out`} >

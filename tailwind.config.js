@@ -5,13 +5,14 @@ export default {
     extend: {
       colors: {
         "black-main": "#050505",
-        "green-main": "#226160",
+        "green-main": "#284135",
         "red-main": "#a95f4d",
-        "white-main": "#fdf6eb",
+        "white-main": "#F3F2F1",
         "yellow-main": "#d0a465",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
+        baskervville: ["Baskervville SC", "sans"],
       }
     },
   },

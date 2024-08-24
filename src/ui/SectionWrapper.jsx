@@ -6,20 +6,20 @@ function SectionWrapper({children}) {
         
         className="h-auto px-28"
         
-        initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0, y: 150 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 1,
-                ease: "easeInOut",
-              },
-            }
-          }}
+        // initial="hidden"
+        //   whileInView="visible"
+        //   viewport={{ once: true }}
+        //   variants={{
+        //     hidden: { opacity: 0, y: 100 },
+        //     visible: {
+        //       opacity: 1,
+        //       y: 0,
+        //       transition: {
+        //         duration: 1,
+        //         ease: "easeInOut",
+        //       },
+        //     }
+        //   }}
         >
             {children}
         </motion.section>

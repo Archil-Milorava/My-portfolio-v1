@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function Presentation() {
   return (
-    <div className="h-screen w-full bg-[url(src/assets/bg.png)] bg-cover bg-center text-green-main font-baskervville">
+    <div className="h-screen w-full bg-[url(../assets/bg.png)] bg-cover bg-center text-green-main font-baskervville">
       <div className="  w- h-full space-y-8 pt-36 pl-48">
         <h1 className=" text-8xl font-extrabold uppercase tracking-wider">
           Archil <br /> milorava.

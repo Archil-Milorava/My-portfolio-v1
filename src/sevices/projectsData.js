@@ -21,7 +21,7 @@ const projects = [
     title: "Pizza ordering app",
     description:
       "In this application, user can order pizza. here is Redux used for state management. If you can not order Pizza, it means that API is not working. ",
-    image: "../../public/pizza-1.png",
+    image: "src/assets/pizza-1.png",
     link: "https://pizza-ordering-chi.vercel.app/",
     githubLink: "https://github.com/Archil-Milorava/Pizza-Ordering",
     fullStack: false,
@@ -38,7 +38,7 @@ const projects = [
     title: "The Wild Oasis 2",
     description:
       "In this application user can log in with Google account and make reservations. This application is fullstack and backend built with Supabase, Frontend with next JS.",
-    image: "../../public/wild-1.png",
+    image: "src/assets/wild-1.png",
     link: "https://the-wild-oasis-opal-three.vercel.app/",
     githubLink: "https://github.com/Archil-Milorava/The-wild-oasis-vol2",
     fullStack: false,
@@ -49,7 +49,7 @@ const projects = [
     title: "Todo List app",
     description:
       "This is normal todo list apps. Your todos are saved in local storage. State is managed with Context API",
-    image: "../../public/todo-1.png",
+    image: "src/assets/todo-1.png",
     link: "https://my-todo-list-seven-ecru.vercel.app/",
     githubLink: "https://github.com/Archil-Milorava/TodoListApp",
     fullStack: false,

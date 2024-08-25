@@ -23,7 +23,7 @@ function TechStack() {
     
     
     
-    className="font-baskervville text-green-main  h-[572px] w-[526px] bg-[url(public/bg2.png)] bg-cover shadow-lg border border-green-main border-opacity-20 p-16 overflow-hidden">
+    className="font-baskervville text-green-main  h-[572px] w-[526px] bg-[url(src/assets/bg2.png)] bg-cover shadow-lg border border-green-main border-opacity-20 p-16 overflow-hidden">
       <h1 className="text-5xl font-extrabold tracking-widest border-b border-b-black text-end border-opacity-20 pb-2">
         Skills
       </h1>

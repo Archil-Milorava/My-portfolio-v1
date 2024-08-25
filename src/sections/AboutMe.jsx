@@ -19,7 +19,7 @@ function AboutMe() {
             },
           }}
     
-    className="h-[572px] w-[799px] bg-[url(/public/bg3.png)] bg-cover shadow-md  p-16 border border-green-main border-opacity-20">
+    className="h-[572px] w-[799px] bg-[url(src/assets/bg3.png)] bg-cover shadow-md  p-16 border border-green-main border-opacity-20">
       <h1 className="text-5xl text-green-main font-extrabold tracking-wider border-b border-b-green-main border-opacity-30 font-baskervville  pb-2">
         Get to know me
       </h1>

@@ -1,13 +1,20 @@
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-
+import { useRef, useState } from "react";
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { IoCopy } from "react-icons/io5";
 
 function Footer() {
+  const [textCopy, setTextCopy] = useState(true);
+  const emailRef = useRef(null);
+
+  function handleCopy() {
+    navigator.clipboard.writeText(emailRef.current.textContent);
+    setTextCopy(false);
+    setTimeout(() => setTextCopy(true), 10000);
+  }
+
   return (
-    <section className="bg-[#424242] w-full h-[10rem] mt-4 flex ">
-      <div className=" w-1/2 h-full flex flex-col items-start justify-center px-8 space-y-4 font-baskervville">
+    <section className="bg-[#424242] w-full h-[10rem] mt-4 flex">
+      <div className="w-1/2 h-full flex flex-col items-start justify-center px-8 space-y-4 font-baskervville">
         <h1 className="text-white-main text-2xl font-semibold tracking-widest">
           Archil Milorava
         </h1>
@@ -16,29 +23,55 @@ function Footer() {
           Web Applications that leads to the success of the overall product
         </p>
       </div>
-      <div className=" w-1/2 h-full flex flex-col items-end justify-center px-8 space-y-4 font-baskervville">
+      <div className="w-1/2 h-full flex flex-col items-end justify-center px-8 space-y-4 font-baskervville">
         <h1 className="text-white-main text-xl font-semibold tracking-widest">
           SOCIAL
         </h1>
         <ul className="flex gap-2">
           <li>
-            <a href="https://www.linkedin.com/in/archil-milorava-9199a110a/" target="_blank">
-              <FaLinkedin className="text-2xl text-white-main"/>
+            <a
+              href="https://www.linkedin.com/in/archil-milorava-9199a110a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="text-2xl text-white-main" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/achi.barsa" target="_blank">
-              <FaGithubSquare className="text-2xl text-white-main"/>
+            <a
+              href="https://github.com/Archil-Milorava"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithubSquare className="text-2xl text-white-main" />
             </a>
           </li>
-
           <li>
-            <a href="https://github.com/Archil-Milorava" target="_blank">
-              <FaFacebookSquare className="text-2xl text-white-main"/>
+            <a
+              href="https://www.facebook.com/achi.barsa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookSquare className="text-2xl text-white-main" />
             </a>
           </li>
         </ul>
-        <p className="text-white-main tracking-widest font-baskervville text-lg"> achimilorava16@gmail.com</p>
+        <div className="flex items-center gap-1">
+          {textCopy ? (
+            <IoCopy
+              className="text-sm text-white-main cursor-pointer hover:text-opacity-50 transition-all"
+              onClick={handleCopy}
+            />
+          ) : (
+            <small className="text-xs text-white-main">copied!</small>
+          )}
+          <p
+            ref={emailRef}
+            className="text-white-main tracking-widest font-baskervville text-lg"
+          >
+            achimilorava16@gmail.com
+          </p>
+        </div>
       </div>
     </section>
   );

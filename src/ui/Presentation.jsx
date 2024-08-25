@@ -9,7 +9,7 @@ function Presentation() {
         </h1>
         <h4 className="text-[37px] font-bold">frontend developer</h4>
         <div className="flex gap-4">
-          <Button>github</Button>
+          <Button><a href="https://github.com/Archil-Milorava" target="_blank">github</a></Button>
         </div>
       </div>
     </div>

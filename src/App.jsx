@@ -7,7 +7,7 @@ import SectionWrapper from "./ui/SectionWrapper";
 
 function App() {
   return (
-    <main className="h-auto w-full flex flex-col space-y-12  bg-white-main">
+    <main className="h-auto w-full flex flex-col space-y-12  bg-white-main overflow-hidden">
       <Header />
 
       <ProjectsSection />

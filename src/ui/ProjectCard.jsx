@@ -13,7 +13,9 @@ function ProjectCard({ data }) {
     technologies,
   } = data;
 
+  
   return (
+    
     <div
       className="h-80 w-72 border border-none shadow-md hover:w-[55rem] cursor-pointer rounded-md transition-all duration-1000 ease-in-out"
       onMouseEnter={() => setIsHovered(true)}
@@ -21,7 +23,7 @@ function ProjectCard({ data }) {
     >
       {isHovered ? (
         <div className="rounded-sm h-full w-full flex gap-2 overflow-hidden bg-white-main">
-          <img src={image} className="h-full w-2/4  object-cover" alt={title} />
+          <img src={image}  className=" h-full w-2/4  object-cover" alt={title} />
 
           <div className=" font-baskervville pl-2 h-full w-2/4 max-h-full overflow-hidden flex flex-col items-start justify-between py-4">
             <h1 className="text-2xl font-semibold tracking-wide text-red-main uppercase">

@@ -4,7 +4,7 @@ const projects = [
     title: "The wild oasis",
     description:
       "This is an application, where user can log in and manage hotel rooms and the reservations. This is Fullstack application and backend built with Supabase.",
-    image: "/public/wild-2.png",
+    image: "src/assets/wild-2.png",
     link: "https://the-wild-oasis-2-nwchz0yjq-archils-projects-9c1cb6e3.vercel.app",
     githubLink: "https://github.com/Archil-Milorava/The-wild-Oasis-2",
     fullStack: true,

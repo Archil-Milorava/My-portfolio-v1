@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function ProjectsSection() {
   return (
-    <div className="w-full h-screen bg-red-main flex items-center">
+    <div className="w-full h-screen bg-red-main flex items-center relative">
       <motion.section
         className={`sm:h-[35rem] sm:w-full p-2 m-0 bg-red-main  flex flex-col items-center justify-center`}
         initial="hidden"
@@ -22,7 +22,7 @@ function ProjectsSection() {
           },
         }}
       >
-        <h1 className="border-b border-b-white-main border-opacity-20 py-2 font-baskervville font-bold text-7xl text-white-main tracking-wider text-center">
+        <h1 className="border-b border-b-white-main border-opacity-20 py-2 font-baskervville font-bold text-7xl text-white-main tracking-widest text-center opacity-70">
           Projects
         </h1>
 

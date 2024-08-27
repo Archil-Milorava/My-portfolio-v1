@@ -1,4 +1,3 @@
-import Button from "./Button";
 
 function Presentation() {
   return (
@@ -12,7 +11,7 @@ function Presentation() {
         </h1>
         <h4 className="text-[37px] font-bold">frontend developer</h4>
         <div className="flex gap-4">
-          <Button><a href="https://github.com/Archil-Milorava" target="_blank">github</a></Button>
+          <a href="https://github.com/Archil-Milorava" className="h-8 w-28 border-2 text-center  tracking-widest font-semibold  hover:opacity-70 transition-all  border-green-main" target="_blank">github</a>
         </div>
       </div>
     </div>

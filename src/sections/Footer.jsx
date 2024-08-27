@@ -15,7 +15,7 @@ function Footer() {
   return (
     <section className="bg-[#424242] w-full h-[22rem] mt-4 flex">
 
-<img src="https://i.postimg.cc/8zc2nFRk/Screenshot-20240827-192745.jpg" alt="profile-photo" className="" />
+<img src="https://i.ibb.co/MfQw4Yx/Screenshot-20240827-192745.jpg" alt="profile-photo" className="" />
 
 
       <div className="w-1/2 h-full flex flex-col items-start justify-center px-8 space-y-4 font-baskervville">

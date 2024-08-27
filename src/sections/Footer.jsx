@@ -13,7 +13,11 @@ function Footer() {
   }
 
   return (
-    <section className="bg-[#424242] w-full h-[10rem] mt-4 flex">
+    <section className="bg-[#424242] w-full h-[22rem] mt-4 flex">
+
+<img src="https://i.postimg.cc/8zc2nFRk/Screenshot-20240827-192745.jpg" alt="profile-photo" className="" />
+
+
       <div className="w-1/2 h-full flex flex-col items-start justify-center px-8 space-y-4 font-baskervville">
         <h1 className="text-white-main text-2xl font-semibold tracking-widest">
           Archil Milorava
@@ -23,7 +27,7 @@ function Footer() {
           Web Applications that leads to the success of the overall product
         </p>
       </div>
-      <div className="w-1/2 h-full flex flex-col items-end justify-center px-8 space-y-4 font-baskervville">
+      <div className="w-1/2 h-full flex flex-col items-end justify-center px-8 space-y-4 font-baskervville ">
         <h1 className="text-white-main text-xl font-semibold tracking-widest">
           SOCIAL
         </h1>

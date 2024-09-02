@@ -22,7 +22,7 @@ function ProjectsSection() {
           },
         }}
       >
-        <h1 className="border-b border-b-white-main border-opacity-20 py-2 font-baskervville font-bold text-7xl text-white-main tracking-widest text-center opacity-70">
+        <h1 className="border-b border-b-white-main border-opacity-20 py-2 font-baskervville font-bold text-7xl text-white-main tracking-widest text-center ">
           Projects
         </h1>
 

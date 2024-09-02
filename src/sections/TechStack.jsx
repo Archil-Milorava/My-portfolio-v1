@@ -7,19 +7,18 @@ function TechStack() {
     
     
     initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{
-            hidden: {  x: 150 },
-            visible: {
-              
-              x: 0,
-              transition: {
-                duration: 2,
-                ease: "easeInOut",
-              },
-            },
-          }}
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        hidden: { x: 500 },
+        visible: {
+          x: 0,
+          transition: {
+            duration: 2,
+            ease: "easeInOut",
+          },
+        },
+      }}
     
     
     

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { IoCopy } from "react-icons/io5";
+import {motion} from 'framer-motion'
 
 function Footer() {
   const [textCopy, setTextCopy] = useState(true);
@@ -13,7 +14,25 @@ function Footer() {
   }
 
   return (
-    <section className="bg-[#424242] w-full h-[22rem] mt-4 flex">
+    <motion.section 
+
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={{
+      hidden: {opacity:0, y: 100 },
+      visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 1,
+          ease: "easeInOut",
+        },
+      },
+    }}
+
+
+    className="bg-[#424242] w-full h-[22rem] mt-4 flex">
 
 <img src="https://i.ibb.co/MfQw4Yx/Screenshot-20240827-192745.jpg" alt="profile-photo" className="" />
 
@@ -77,7 +96,7 @@ function Footer() {
           </p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

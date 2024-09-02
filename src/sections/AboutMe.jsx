@@ -6,9 +6,8 @@ function AboutMe() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={{
-        hidden: { x: -150 },
+        hidden: { x: -500 },
         visible: {
-          // opacity: 1,
           x: 0,
           transition: {
             duration: 2,

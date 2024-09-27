@@ -21,9 +21,9 @@ function AboutMe() {
         Get to know me
       </h1>
       <p className=" h-full w-full text-md text-start pt-10 leading-8 text-green-main">
-        I&apos;m a{" "}
-        <span className="font-bold">Frontend Focused Web Developer</span>{" "}
-        building the Front-end of Websites and Web Applications that leads to
+        I&apos;m a{" "} full stack Web Developer. 
+        <span className="font-bold"> Frontend Focused</span>{" "}
+        building the Front and backend of Websites and Web Applications that leads to
         the success of the overall product. Check out some of my work in the
         Projects section.
         <br />
@@ -43,7 +43,7 @@ function AboutMe() {
         I&apos;m open to <span className="font-bold tracking-wide">
           Job
         </span>{" "}
-        opportunities where I can contribute, learn and grow. If you have a good
+        opportunities where I can contribute,<span className="font-bold tracking-wide"> learn and grow. </span> If you have a good
         opportunity that matches my skills and experience then don&apos;t
         hesitate to <span className="font-bold">contact</span> me.
       </p>

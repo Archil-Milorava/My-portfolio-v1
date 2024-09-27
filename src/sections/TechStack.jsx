@@ -140,7 +140,7 @@ function TechStack() {
           }}
         >
           <StackIcon
-            name="supabase"
+            name="nodejs"
             className="h-18 p-2 bg-slate-700  bg-opacity-10"
           />
         </motion.div>
@@ -151,7 +151,7 @@ function TechStack() {
           }}
         >
           <StackIcon
-            name="redux"
+            name="mongodb"
             className="h-18 p-2 bg-slate-700  bg-opacity-10"
           />
         </motion.div>
@@ -162,7 +162,7 @@ function TechStack() {
           }}
         >
           <StackIcon
-            name="framer"
+            name="reactquery"
             className="h-18 p-2 bg-slate-700  bg-opacity-10"
           />
         </motion.div>

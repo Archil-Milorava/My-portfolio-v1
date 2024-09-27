@@ -42,7 +42,7 @@ function Footer() {
           Archil Milorava
         </h1>
         <p className="text-white-main">
-          A Frontend focused Web Developer building the Frontend of Websites and
+          A Full stack  Web Developer building the Frontend and backend of Websites and
           Web Applications that leads to the success of the overall product
         </p>
       </div>
